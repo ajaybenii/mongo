@@ -2,6 +2,8 @@ from fastapi import FastAPI, HTTPException
 from models import Item
 from database import collection
 from bson import ObjectId
+import ssl
+print("Using SSL version:", ssl.OPENSSL_VERSION)
 
 app = FastAPI()
 
